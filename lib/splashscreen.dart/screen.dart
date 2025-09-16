@@ -6,9 +6,12 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Column(
-              children: [
-                Container(
-                  width: 200,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+
+        Container(
+          width: 200,
                   height: 300,
                   color: Colors.lightGreenAccent,
                   child: Center(child: Text('Welcome', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),)),
