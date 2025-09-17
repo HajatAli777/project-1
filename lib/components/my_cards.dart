@@ -214,6 +214,50 @@ class MyCards extends StatelessWidget {
                 ),
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(onPressed: () {}, child: Row(
+                  children: [
+                    Icon(Icons.update),
+                    SizedBox(width: 4),
+                    Text('Update'),
+                 ],
+                )),
+                ElevatedButton(onPressed: () {}, child: Row(
+                      children: [
+                        Icon(Icons.phone),
+                        SizedBox(width: 4),
+                        Text('Calls'),
+                      ],
+                    )
+                    ),
+                 ElevatedButton(onPressed: () {}, child: Row(
+                      children: [
+                        Icon(Icons.person_4),
+                        SizedBox(width: 4),
+                        Text('Communities'),
+                      ],
+                    )
+                    ),
+                    ElevatedButton(onPressed: () {}, child: Row(
+                      children: [
+                        Icon(Icons.chat),
+                        SizedBox(width: 4),
+                        Text('Chats'),
+                      ],
+                    )
+                    ),
+                    ElevatedButton(onPressed: () {}, child: Row(
+                      children: [
+                        Icon(Icons.settings),
+                        SizedBox(width: 4),
+                        Text('Settings'),
+                      ],
+                    )
+                    )
+              ],
+            )
           ],
         ),
       ),

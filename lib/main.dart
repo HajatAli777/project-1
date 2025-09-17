@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           ],
           centerTitle: true,
         ),
-        body: const MyCards(),
+        body: MyCards(),
       ),
     );
   }
