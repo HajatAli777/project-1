@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p1/components/intrection_decoration.dart';
 import 'components/my_cards.dart'; 
 
 void main() {
@@ -11,23 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Card App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.black,
-
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 11, 0, 12),
-          
-          leading: Icon(Icons.menu, color: Colors.white,),
-          actions: [
-            IconButton(onPressed: (){}, icon: Icon(Icons.add, color: Colors.white,)),
-            IconButton(onPressed: (){}, icon: Icon(Icons.more_vert, color: Colors.white,))
-          ],
-          centerTitle: true,
-        ),
-        body: MyCards(),
-      ),
+      home: CustomInteractionDecoration(),
     );
   }
 }
